@@ -36,7 +36,7 @@ function Hero() {
           environments powered by Docker. Deploy previews, run demos,
           and iterate faster — without touching production.
         </p>
-        <a className="hero-cta" href="https://app.playgrounds.dev">
+        <a className="hero-cta" href="https://my.playgrounds.dev">
           Get Started →
         </a>
       </div>
@@ -64,14 +64,6 @@ function Features() {
   );
 }
 
-function Powered() {
-  return (
-    <div className="powered-by">
-      Powered by <span className="brand">playgrounds.dev</span>
-    </div>
-  );
-}
-
 export default function Home() {
   return (
     <Layout
@@ -80,7 +72,6 @@ export default function Home() {
     >
       <Hero />
       <Features />
-      <Powered />
     </Layout>
   );
 }
