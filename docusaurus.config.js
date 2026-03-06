@@ -6,6 +6,12 @@ const config = {
   tagline: 'Launch full-stack environments in seconds',
   favicon: 'img/favicon.ico',
 
+  headTags: [
+    { tagName: 'link', attributes: { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/apple-touch-icon.png' } },
+    { tagName: 'link', attributes: { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/img/icon-192.png' } },
+    { tagName: 'link', attributes: { rel: 'manifest', href: '/site.webmanifest' } },
+  ],
+
   future: {
     v4: true,
   },
@@ -15,13 +21,16 @@ const config = {
 
   organizationName: 'phoenix-playgrounds',
   projectName: 'marketing',
-  trailingSlash: false,
 
   onBrokenLinks: 'throw',
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'uk'],
+    localeConfigs: {
+      en: { label: 'English' },
+      uk: { label: 'Українська' },
+    },
   },
 
   presets: [
@@ -76,6 +85,10 @@ const config = {
           {
             href: 'https://github.com/phoenix-playgrounds',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
