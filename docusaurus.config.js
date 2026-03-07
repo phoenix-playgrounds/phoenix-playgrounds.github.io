@@ -73,6 +73,36 @@ const config = {
         },
         items: [
           {
+            type: 'custom-solutions-dropdown',
+            position: 'left',
+          },
+          {
+            type: 'dropdown',
+            label: 'Plans',
+            position: 'left',
+            items: [
+              { to: '/plans', label: 'All Plans' },
+              { to: '/plans/tutorial', label: 'Tutorial' },
+              { to: '/plans/single', label: 'Single Player' },
+              { to: '/plans/multiplayer', label: 'Multiplayer' },
+            ],
+          },
+          {
+            to: '/teams',
+            label: 'Teams',
+            position: 'left',
+          },
+          {
+            to: '/enterprise',
+            label: 'Enterprise',
+            position: 'left',
+          },
+          {
+            to: '/affiliate',
+            label: 'Affiliate',
+            position: 'left',
+          },
+          {
             href: 'https://docs.playgrounds.dev',
             label: 'Docs',
             position: 'left',
@@ -81,6 +111,12 @@ const config = {
             href: 'https://blog.playgrounds.dev',
             label: 'Blog',
             position: 'left',
+          },
+          {
+            to: '/contact',
+            label: 'Contact',
+            position: 'right',
+            className: 'navbar__link--contact',
           },
           {
             href: 'https://github.com/phoenix-playgrounds',
