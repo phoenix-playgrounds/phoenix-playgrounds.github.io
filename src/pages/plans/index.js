@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Translate, { translate } from '@docusaurus/Translate';
 
+const TagIcon = () => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" /><line x1="7" y1="7" x2="7.01" y2="7" /></svg>
+);
+
 export default function Plans() {
     return (
         <Layout
@@ -11,11 +15,11 @@ export default function Plans() {
             <section className="placeholder-section">
                 <div className="placeholder-inner">
                     <span className="hero-badge">
-                        <Translate id="plans.badge">💰 Plans</Translate>
+                        <TagIcon />
+                        <Translate id="plans.badge">Plans</Translate>
                     </span>
                     <h1 className="hero-title">
-                        <Translate id="plans.title.line1">Choose your</Translate>
-                        <br />
+                        <Translate id="plans.title.line1">Choose your</Translate>{' '}
                         <span className="accent">
                             <Translate id="plans.title.accent">perfect plan</Translate>
                         </span>

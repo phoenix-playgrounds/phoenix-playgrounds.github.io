@@ -2,6 +2,10 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Translate, { translate } from '@docusaurus/Translate';
 
+const HandshakeIcon = () => (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M11 17a1 1 0 0 1-1 1H6l-4 4V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v6" /><path d="M14 9h2a2 2 0 0 1 2 2v1l3-3 4 4-3 3h-1a2 2 0 0 1-2 2h-6" /></svg>
+);
+
 export default function Affiliate() {
     return (
         <Layout
@@ -11,11 +15,11 @@ export default function Affiliate() {
             <section className="placeholder-section">
                 <div className="placeholder-inner">
                     <span className="hero-badge">
-                        <Translate id="affiliate.badge">🤝 Affiliate</Translate>
+                        <HandshakeIcon />
+                        <Translate id="affiliate.badge">Affiliate</Translate>
                     </span>
                     <h1 className="hero-title">
-                        <Translate id="affiliate.title.line1">Earn by</Translate>
-                        <br />
+                        <Translate id="affiliate.title.line1">Earn by</Translate>{' '}
                         <span className="accent">
                             <Translate id="affiliate.title.accent">sharing</Translate>
                         </span>
