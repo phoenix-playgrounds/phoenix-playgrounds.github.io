@@ -103,6 +103,11 @@ const config = {
             position: 'left',
           },
           {
+            to: '/comparison',
+            label: 'Compare',
+            position: 'left',
+          },
+          {
             href: 'https://docs.playgrounds.dev',
             label: 'Docs',
             position: 'left',
